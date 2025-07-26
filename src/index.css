@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow-x: hidden;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #f3f4f6;
+  color: #1f2937;
+  overflow-y: auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5vh 2vw;
+}
+
+.title {
+  font-size: 2.8rem;
+  margin-bottom: 4vh;
+  color: #1d4ed8;
+  font-weight: 700;
+  background-color: #e0e7ff;
+  padding: 1rem 3rem;
+  border-radius: 12px;
+  border: 2px dashed #93c5fd;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1300px;
+  gap: 2rem;
+  padding-bottom: 5rem; 
+}
+
+.card {
+  width: 350px;
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform-origin: center;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.image {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+.tourInfo {
+  margin: 15px 0 10px;
+  text-align: center;
+}
+
+.trip-price {
+  color: #059669;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.trip-name {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-top: 6px;
+  color: #111827;
+}
+
+.read-more {
+  color: #3b82f6;
+  cursor: pointer;
+  font-weight: 500;
+  margin-top: 6px;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
+.btn-red {
+  margin-top: 20px;
+  padding: 10px 60px;
+  border: none;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  background-color: #fee2e2;
+  color: #b91c1c;
+  transition: all 0.3s ease;
+}
+
+.btn-red:hover {
+  background-color: #dc2626;
+  color: #fff;
+}
+
+.refresh {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.btn-white {
+  margin-top: 18px;
+  padding: 10px 60px;
+  border: 2px solid #e5e7eb;
+  cursor: pointer;
+  background-color: #fff;
+  color: #1f2937;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.btn-white:hover {
+  background-color: #1f2937;
+  color: #fff;
+}
